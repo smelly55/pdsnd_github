@@ -2,10 +2,10 @@
 21 March 2023
 
 ### Project Title
-Replace the Project Title
+Interactive US Bikeshare data
 
 ### Description
-Describe what your project is about and what it does
+An interactive platform which allows users to access and view Bikeshare data for Chicago, New York City and/or Washington based on their selections.
 
 ### Files used
 Include the files used
