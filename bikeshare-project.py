@@ -79,7 +79,7 @@ def time_stats(df):
     common_hour = df['hour'].mode()[0]
     print('Most common hour to start using a bike is: ', common_hour,":00")
 
-    print("\nThis took %s seconds." % round((time.time() - start_time),5))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
@@ -96,7 +96,7 @@ def station_stats(df):
     frequent_station_combo = df.groupby(['Start Station','End Station']).size().nlargest(1)
     print('Most Frequent Combination of Start and End Stations: ', frequent_station_combo)
 
-    print("\nThis took %s seconds." % round((time.time() - start_time),5))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
@@ -110,7 +110,7 @@ def trip_duration_stats(df):
     mean_travel_time = round(((df['Trip Duration'].mean())/60),1)
     print('Average Travel Time: ',mean_travel_time,'minutes')
 
-    print("\nThis took %s seconds." % round((time.time() - start_time),5))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 
@@ -140,7 +140,7 @@ def user_stats(df):
     except KeyError:
         print('\nThere is no year of birth data available for the selected city')
         
-    print("\nThis took %s seconds." % round((time.time() - start_time),5))
+    print("\nThis took %s seconds." % round((time.time() - start_time),3))
     print('-'*40)
 
 def view_raw_data(df):
